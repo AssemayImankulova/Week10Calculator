@@ -21,3 +21,9 @@ window.addEventListener('load', function () {
         if (event.target.innerHTML === 'c') {
             textArea.innerHTML = '0';
         }
+          else if (event.target.innerHTML === '=') {
+            for(let i = 0; i < textArea.innerHTML.length; i++) {
+              if(textArea.innerHTML[i] == '√') {
+                textArea.innerHTML = Math.sqrt(textArea.innerHTML[i + 1]);
+              }
+            }
