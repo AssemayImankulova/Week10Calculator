@@ -28,3 +28,6 @@ window.addEventListener('load', function () {
               }
                   textArea.innerHTML = eval(textArea.innerHTML);
             }
+      else if (event.target.innerHTML == 'x²') {
+          textArea.innerHTML = Math.pow(textArea.innerHTML[textArea.innerHTML.length - 1], 2);
+        }
