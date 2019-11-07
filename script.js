@@ -26,4 +26,5 @@ window.addEventListener('load', function () {
               if(textArea.innerHTML[i] == '√') {
                 textArea.innerHTML = Math.sqrt(textArea.innerHTML[i + 1]);
               }
+                  textArea.innerHTML = eval(textArea.innerHTML);
             }
