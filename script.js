@@ -53,3 +53,5 @@ else if (event.target.innerHTML == 'π') {
         else {
             textArea.innerHTML += event.target.innerHTML;
         }
+                }
+});
