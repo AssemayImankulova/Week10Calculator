@@ -17,3 +17,7 @@ window.addEventListener('load', function () {
     document.querySelectorAll('#calc-wrap .btn').forEach(function (button) {
         button.addEventListener('click', onButtonClick);
     });
+      function onButtonClick(event) {
+        if (event.target.innerHTML === 'c') {
+            textArea.innerHTML = '0';
+        }
