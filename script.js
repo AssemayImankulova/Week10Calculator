@@ -31,3 +31,6 @@ window.addEventListener('load', function () {
       else if (event.target.innerHTML == 'x²') {
           textArea.innerHTML = Math.pow(textArea.innerHTML[textArea.innerHTML.length - 1], 2);
         }
+else if (event.target.innerHTML == 'x³') {
+          textArea.innerHTML = Math.pow(textArea.innerHTML[textArea.innerHTML.length - 1], 3);
+        }
