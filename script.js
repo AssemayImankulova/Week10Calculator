@@ -46,3 +46,10 @@ else if (event.target.innerHTML == 'π') {
           else {
             textArea.innerHTML *= Math.PI;
           }
+       }
+        else if (textArea.innerHTML === '0') {
+            textArea.innerHTML = event.target.innerHTML;
+        }
+        else {
+            textArea.innerHTML += event.target.innerHTML;
+        }
