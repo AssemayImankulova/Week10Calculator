@@ -14,3 +14,6 @@ window.addEventListener('load', function () {
         signElement.innerHTML = sign;
         calc.appendChild(signElement);
     });
+    document.querySelectorAll('#calc-wrap .btn').forEach(function (button) {
+        button.addEventListener('click', onButtonClick);
+    });
