@@ -38,3 +38,11 @@ else if (event.target.innerHTML == 'x³') {
           textArea.innerHTML += event.target.innerHTML;
           textArea.innerHTML = eval(textArea.innerHTML);
         }            
+else if (event.target.innerHTML == 'π') {
+          if(textArea.innerHTML == '0') {
+            textArea.innerHTML = '';
+            textArea.innerHTML += Math.PI;
+          }
+          else {
+            textArea.innerHTML *= Math.PI;
+          }
