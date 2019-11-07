@@ -34,3 +34,7 @@ window.addEventListener('load', function () {
 else if (event.target.innerHTML == 'x³') {
           textArea.innerHTML = Math.pow(textArea.innerHTML[textArea.innerHTML.length - 1], 3);
         }
+   else if (event.target.innerHTML == '*') {
+          textArea.innerHTML += event.target.innerHTML;
+          textArea.innerHTML = eval(textArea.innerHTML);
+        }            
